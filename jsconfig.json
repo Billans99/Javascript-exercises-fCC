@@ -10,15 +10,64 @@
 7. Profile lookup
 8. parseInt with radix
 
+
+
+
+
+
 ES6
 9. Use class Syntax to Define a Constructor Function
 Youtube javascript classes on youtube and do more little exercises
 
+
+
+
+
+
 Skipped Regex because Baker said it's not needed
 
+
+
+
+
+
+
 Started Debugging
-Notes: Useful to console.log() to check that previous calculations are
-performing correctly.
+
+Notes: 
+Useful to console.log() to check that previous calculations are
+performing correctly. Console also has console.warn() and console.clear().
+
+console.clear(); clears the log. 
+
+Below are examples of typeof:
+let myVar1 = "3";
+let myVar2 = 2;
+console.log(typeof myVar1);
+console.log(typeof myVar2);
+    string
+    number
+
+Javascript has 7 immutable datatypes:
+1. Boolean
+2. Null
+3. Undefined
+4. Number
+5. String
+6. Symbol
+7. BigInt
+
+Spelling mistakes will show as reference error and myVar is not defined. 
+
+Always add the second half of pair types () {} [] to avoid forgetting it 
+later on.
+
+
+
+
+
+
+
 
 
 
