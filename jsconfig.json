@@ -73,6 +73,26 @@ Dont forget to add parenthesis () to the end of a function or method when
 delcaring it and also calling it.
 Usually the value returned at end of function is assigned to a variable.
 
+OBOE
+Off by one errors typically occur in an index of a string or array.
+e.g. for (let i = 1; i < myVar.length ; i++);
+This will skip the first element of the array. Correct code would be
+e.g. for (let i = 0; i < myVar.length; i++);
+
+Caution when reinitialising variable inside a loop.
+In some loops you may need to reinitialize a variable INSIDE the loop
+or even take out the reinitialized variable when it is not needed.
+Example of initializing a variable e.g. let row = [];
+
+Dreaded infinite loops.
+Loops need a terminal condition. Infinite loops are likely to freeze or 
+crash the browser. 
+
+
+
+
+
+
 
 
 
