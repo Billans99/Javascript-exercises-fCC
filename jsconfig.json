@@ -102,6 +102,438 @@ Arrays()
 
 
 
+EXTRA NOTES FROM ES6 EXERCISES:
+
+1. Compare Scopes of the var and let Keywords
+Notes: 
+Declaring var will declare it globally or locally. Let can be
+be declared in a block, statement or expression. Let was introduced in 
+ES6, never use var. Remember to use const always unless you think it should
+be mutable.
+
+2. Mutate an Array Declared with const
+Notes: 
+You can declare const s = [5, 7, 2]; but cant redeclare it later 
+saying const s = [2, 7, 5]. You can however mutate the array e.g. s[0] = 2;
+s[1] = 7; s[2] = 5; After this your array would now be [2, 7, 5]. Nice!
+
+3. Prevent Object Mutation
+Notes: 
+Object.freeze(object);
+Properties cannot be added, deleted or changed, as well as their
+corresponding values.
+
+4. Use Arrow Functions to Write Concise Anonymous Functions
+Notes:
+Functions are usually written like this: 
+
+const myFunc = function() {
+    const myVar = "value";
+    return myVar;
+  }
+However, with ES6 arrow functions look like this:{
+    const myFunc = () => {
+        const myVar = "value";
+        return myVar;
+      }
+When there is no body function and only a return value it can be shortened
+even further to this: 
+    const myFunc = () => "value";
+
+5. Write Arrow Functions with Parameters
+Notes:
+Arrow functions can also parse parameters e.g.
+    const doubler = (item) => item * 2;
+    doubler(4);
+If there is only one parameter, the () parentheses can be removed. e.g.
+    const doubler = item => item * 2;
+    doubler(4);
+Here's an example of a two parameter arrow function.
+    const multiplier = (item, multi) => item * multi;
+    multiplier(4, 2);
+
+6. Set Default Parameters for Your Functions
+Notes:
+ES6 has default parameters for functions. 
+    const greeting = (name = "Anonymous") => "Hello " + name;
+
+    console.log(greeting("John"));
+    console.log(greeting());
+The first console.log will display the strings Hello John, and the second
+ will return Hello Anonymous.
+
+ 7. Use the Rest Parameter with Function Parameters
+const sum = (...args) => {
+    const sum = (...args) => {
+        let total = 0;
+        for (let i = 0; i < args.length; i++) {
+          total += args[i];
+        }
+        return total;
+      }
+      console.log(sum(1, 2, 3)); // 6
+
+ 8. Use the Spread Operator to Evaluate Arrays In-Place
+ const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+ let arr2;
+ 
+ arr2 = [...arr1];  // Change this line
+ 
+ console.log(arr2);
+
+ 9. Use Destructuring Assignment to Extract Values from Objects
+ const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+  };
+  
+  // Only change code below this line
+  const {today} = HIGH_TEMPERATURES;
+  const {tomorrow} = HIGH_TEMPERATURES
+  
+  // const today = HIGH_TEMPERATURES.today;
+  // const tomorrow = HIGH_TEMPERATURES.tomorrow;
+  
+  // Only change code above this line
+
+ 10. Use Destructuring Assignment to Assign Variables from Objects
+ const HIGH_TEMPERATURES = {
+    yesterday: 75,
+    today: 77,
+    tomorrow: 80
+  };
+  
+  // Only change code below this line
+  const {highToday: today} = HIGH_TEMPERATURES;
+  const {highTomorrow: tomorrow} = HIGH_TEMPERATURES;
+  
+  const {today: highToday} = HIGH_TEMPERATURES; 
+  const {tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+  // const highToday = HIGH_TEMPERATURES.today;
+  // const highTomorrow = HIGH_TEMPERATURES.tomorrow; 
+  
+  // Only change code above this line
+
+ 11. Use Destructuring Assignment to Assign Variables from Nested Objects
+ const LOCAL_FORECAST = {
+    yesterday: { low: 61, high: 75 },
+    today: { low: 64, high: 77 },
+    tomorrow: { low: 68, high: 80 }
+  };
+  
+  // Only change code below this line
+  const { today: {low: lowToday, high: highToday}} = LOCAL_FORECAST;  
+  
+  // const lowToday = LOCAL_FORECAST.today.low;
+  // const highToday = LOCAL_FORECAST.today.high;
+  
+  // Only change code above this line
+
+ 12. Use Destructuring Assignment to Assign Variables from Arrays
+ let a = 8, b = 6;
+ // Only change code below this line
+ [a, b] = [b, a];
+
+ 13. Destructuring via rest elements
+ function removeFirstTwo(list) {
+    const [a, b, ...newArray] = list;
+    return newArray;
+  }
+  
+  const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const sourceWithoutFirstTwo = removeFirstTwo(source);
+
+ 14. Use Destructuring Assignment to Pass an Object as a Function's
+ Parameters
+ const stats = {
+    max: 56.78,
+    standard_deviation: 4.34,
+    median: 34.54,
+    mode: 23.87,
+    min: -0.75,
+    average: 35.85
+  };
+  
+  // Only change code below this line
+  const half = ({ max, min }) => (max + min) / 2.0;
+   
+  // Only change code above this line
+
+  15. Create Strings using Template Literals
+  Notes: 
+  Template literals are performed with backticks `` and 
+  ${variable/object} or ${object.prop}
+
+  const result = {
+    success: ["max-length", "no-amd", "prefer-arrow-functions"],
+    failure: ["no-var", "var-on-top", "linebreak"],
+    skipped: ["no-extra-semi", "no-dup-keys"]
+  };
+  function makeList(arr) {
+    // Only change code below this line
+    const failureItems = [];
+    for (let i = 0; i < arr.length; i++) {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`)
+  
+    }
+    
+    // Only change code above this line
+  
+    return failureItems;
+  }
+  
+  const failuresList = makeList(result.failure);
+    
+  16. Write Concise Object Literal Declarations Using Object Property
+   Shorthand
+   Notes:
+   Use object property shorthand with object literals
+
+   const createPerson = (name, age, gender) => 
+  // Only change code below this line
+  ({name, age, gender});
+
+  17. Write Concise Declarative Functions with ES6
+  notes: 
+  functions can be declared in an object. Also the word "function" and
+  colon can be removed in ES6 to make it look cleaner to read.
+
+// Only change code below this line
+const bicycle = {
+    gear: 2,
+    setGear(newGear) {
+      this.gear = newGear;
+    }
+  };
+  // Only change code above this line
+  bicycle.setGear(3);
+  console.log(bicycle.gear);
+
+  18. Use class Syntax to Define a Constructor Function
+  Notes: 
+- Classes are a blueprint for creating (it can also be referred to as 
+  instantiating) objects
+- Classes can also have functions which are called methods
+- Classes can also have properties
+- The most common thing that you do in the constructor is to set properties 
+  on the class
+- to create a new instance of a class, use the key word "new" and then 
+  the class name. E.g "new Spaceship"
+- the constructor a method is a special method that is called when 
+  creating an instance of a class
+- when accessing properties in the class, you will need to use the 
+  key word "this" e.g this.myProperty
+- They typically use UpperCamelCase as the name e.g. SpaceShuttle . 
+
+  // Only change code below this line
+class Vegetable {
+  constructor(name) {
+    this.name = name; 
+  }
+}
+// Only change code above this line
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); // Should display 'carrot'
+
+19. Use getters and setters to Control Access to an Object
+Notes: 
+Getter functions are meant to simply return (get) the value of an object's 
+private variable to the user without the user directly accessing the 
+private variable.
+
+Setter functions are meant to modify (set) the value of an object's private
+variable based on the value passed into the setter function. This change 
+could involve calculations, or even overwriting the previous value 
+completely.
+Getters and setters are important as they hide internal implementation 
+details. It is convention to put underscore because private variable _. 
+e.g. _author . Although doing it does not make it private.
+
+// Only change code below this line
+class Thermostat {
+  constructor(fahrenheit) {
+    this._fahrenheit = fahrenheit;
+  }
+
+  get temperature() {
+    return 5/9 * (this._fahrenheit - 32);
+  }
+
+  set temperature(celcius) {
+   return this._fahrenheit = (celcius * 9.0) / 5 + 32;
+  }
+}
+// Only change code above this line
+
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature; // 24.44 in Celsius
+thermos.temperature = 26;
+temp = thermos.temperature; // 26 in Celsius
+
+20. Create a module script. 
+Notes: 
+With the `<script="module" src="index.js"></script>` you
+can export files for use in other files or import the parts you need, 
+where you need.
+
+<html>
+  <body>
+    <!-- Only change code below this line -->
+<script type="module" src="index.js"></script>
+    <!-- Only change code above this line -->
+  </body>
+</html>
+
+21. Use export to Share a Code Block
+Notes: The last line of code is how to export. In the example below, 
+the function names are used as arguments for the export in order to export 
+the functions.
+
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+
+export {uppercaseString, lowercaseString};
+
+Here's another example.
+
+const add = (x, y) => {
+  return x + y;
+}
+
+export { add };
+
+
+22. Reuse JavaScript Code Using import
+Notes: 
+Following from the export code from above, in the new file where you want 
+to import what you exported, write
+
+import {uppercaseString, lowercaseString} from './string_functions.js';
+// Only change code above this line
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+Here's another example:
+import { add } from './math_functions.js';
+
+
+23. Use * to Import Everything from a File
+Notes:
+To import everything from a file: use,
+import * as stringFunctions from "./string_functions.js"
+// Only change code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+Here's another example. Dont forget it has to have ./ before file name.
+import * as myMathModule from "./math_functions.js";
+
+24. Create an Export Fallback with export default
+Notes:
+Default export adds a fallback value for a module or file.
+Below is a regular function:
+
+function subtract(x, y) {
+  return x - y;
+} 
+Now we will add default export fallback
+export default function subtract(x, y) {
+  return x - y;
+}
+
+25. Import a Default Export
+Notes: 
+Here is how to import a default export from question 24. 
+
+import subtract from "./math_functions.js"
+// Only change code above this line
+
+subtract(7,4);
+
+26. Create a JavaScript Promise
+Notes: promises are useed to make a promise, usually asynchronously.
+Promise is a constructor function so u use the new keyword e.g. 
+new Promise . Resolve parameter is used when you want your promise to 
+succeed. Reject is used when you want it to fail. 
+Here is an example below. 
+const makeServerRequest = new Promise((resolve, reject) => {
+
+  });
+
+27. Complete a Promise with resolve and reject
+Notes: 
+A promise has three states: pending, fulfilled, rejected. The previous
+promise in Q.26 will always be pending because there's no way to complete
+the promise. 
+Here's an example of completing a promise with resolve and reject.
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+   resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+   return responseFromServer;
+});
+
+28. Handle a Fulfilled Promise with then
+Notes: 
+Then is used to action it to do something when the promised is resolved. 
+In this case it console logs the result which is "We got the data"
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+
+29. Handle a rejected promise with catch
+Notes: 
+Catch is used to action a promise that is rejected. It happens right after
+the rejection is called. 
+Here's an example of how of syntax: 
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+makeServerRequest.catch(error => {
+  console.log(error);
+})
+});
+
+
+
+
+
+
 
 
 
