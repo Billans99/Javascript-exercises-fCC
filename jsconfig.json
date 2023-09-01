@@ -62,6 +62,20 @@ Spelling mistakes will show as reference error and myVar is not defined.
 Always add the second half of pair types () {} [] to avoid forgetting it 
 later on.
 
+Don't forget about using the escape key \ when using quotes in a string.
+You can also decide to use the different quotes " ''
+
+Remember:
+= is the assignment operator. Equality == and strict equality === are to
+check if something is equal to something else. 
+
+Dont forget to add parenthesis () to the end of a function or method when 
+delcaring it and also calling it.
+Usually the value returned at end of function is assigned to a variable.
+
+
+
+
 
 
 
