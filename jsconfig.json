@@ -1,6 +1,6 @@
 /* code to revisit */
 
-/* Javascript Algorithm To-Do list
+/*              Javascript Algorithm To-Do list
 1. Golf Code
 2. Counting Cards
 3. Record Collection
@@ -9,12 +9,6 @@
 6. Replace loops using recursion
 7. Profile lookup
 8. parseInt with radix
-
-
-
-
-
-
 ES6
 9. Use class Syntax to Define a Constructor Function
 Youtube javascript classes on youtube and do more little exercises
@@ -24,7 +18,7 @@ Youtube javascript classes on youtube and do more little exercises
 
 
 
-Skipped Regex because Baker said it's not needed
+                Skipped Regex because Baker said it's not needed
 
 
 
@@ -32,30 +26,31 @@ Skipped Regex because Baker said it's not needed
 
 
 
-Started Debugging
+                Started Debugging:
 
-Notes: 
-Useful to console.log() to check that previous calculations are
-performing correctly. Console also has console.warn() and console.clear().
+                Notes: 
 
-console.clear(); clears the log. 
+Useful to console.log() 
+    To check that previous calculations are
+    performing correctly. Console also has console.warn() and console.clear().
+    console.clear(); clears the log. 
 
 Below are examples of typeof:
-let myVar1 = "3";
-let myVar2 = 2;
-console.log(typeof myVar1);
-console.log(typeof myVar2);
-    string
-    number
+    let myVar1 = "3";
+    let myVar2 = 2;
+    console.log(typeof myVar1);
+    console.log(typeof myVar2);
+        string
+        number
 
 Javascript has 7 immutable datatypes:
-1. Boolean
-2. Null
-3. Undefined
-4. Number
-5. String
-6. Symbol
-7. BigInt
+    1. Boolean
+    2. Null
+    3. Undefined
+    4. Number
+    5. String
+    6. Symbol
+    7. BigInt
 
 Spelling mistakes will show as reference error and myVar is not defined. 
 
@@ -66,60 +61,73 @@ Don't forget about using the escape key \ when using quotes in a string.
 You can also decide to use the different quotes " ''
 
 Remember:
-= is the assignment operator. Equality == and strict equality === are to
-check if something is equal to something else. 
+    = is the assignment operator. Equality == and strict equality === are to
+    check if something is equal to something else. 
 
-Dont forget to add parenthesis () to the end of a function or method when 
-delcaring it and also calling it.
-Usually the value returned at end of function is assigned to a variable.
+    Dont forget to add parenthesis () to the end of a function or method when 
+    delcaring it and also calling it.
+    Usually the value returned at end of function is assigned to a variable.
 
-OBOE
-Off by one errors typically occur in an index of a string or array.
-e.g. for (let i = 1; i < myVar.length ; i++);
-This will skip the first element of the array. Correct code would be
-e.g. for (let i = 0; i < myVar.length; i++);
+ OBOE
+    Off by one errors typically occur in an index of a string or array.
+    e.g. for (let i = 1; i < myVar.length ; i++);
+    This will skip the first element of the array. Correct code would be
+    e.g. for (let i = 0; i < myVar.length; i++);
 
 Caution when reinitialising variable inside a loop.
-In some loops you may need to reinitialize a variable INSIDE the loop
-or even take out the reinitialized variable when it is not needed.
-Example of initializing a variable e.g. let row = [];
+    In some loops you may need to reinitialize a variable INSIDE the loop
+    or even take out the reinitialized variable when it is not needed.
+    Example of initializing a variable e.g. let row = [];
 
 Dreaded infinite loops.
-Loops need a terminal condition. Infinite loops are likely to freeze or 
-crash the browser. 
+    Loops need a terminal condition. Infinite loops are likely to freeze or 
+    crash the browser. 
 
 
 
 
 
-Data structures:
+                Data structures:
 
-Arrays()
+                Arrays()
 
 Assign variable to element in an array 
-const myArray = [1, 2, 3, 4, 5];
-const myVar = myArray[1];
-myVar is now = 2
+    const myArray = [1, 2, 3, 4, 5];
+    const myVar = myArray[1];
+    myVar is now = 2
 
 Change an element inside array index
-const myArray = [1, 2, 3, 4, 5];
-myArray[1] = "Billy";
-console.log(myArray)
-[1, "Billy, 3, 4, 5];
+    const myArray = [1, 2, 3, 4, 5];
+    myArray[1] = "Billy";
+    console.log(myArray)
+    [1, "Billy, 3, 4, 5];
 
 Add elements to the start of array
-myArray.unshift("Billy", 7);
+    myArray.unshift("Billy", 7);
 
 Add elements to end of array
-myArray.push("myString", 7);
+    myArray.push("myString", 7);
 
 Remove element from start of array. 
-Note: it can only remove one element.
-myArray.shift();
+    Note: it can only remove one element.
+    myArray.shift();
 
 Remove element from end of array.
-Note: it can only remove one element.
-myArray.pop();
+    Note: it can only remove one element.
+    myArray.pop();
+
+Return or assign pop() or shift value to variable
+    let myArray = [1, 2, 3, 4];
+    let popped = myArray.pop();
+
+Remove middle of array or multiple elements using splice()
+    let myArray = ["I", "am", "feeling", "really", "happy"]
+    let newArray = myArray.splice(3, 2);
+
+    console.log(newArray);
+    ["really", "happy"]
+    console.log(myArray)
+    ["I", "am", "feeling"];
 
 
 
@@ -128,7 +136,9 @@ myArray.pop();
 
 
 
-EXTRA NOTES FROM ES6 EXERCISES:
+
+
+                    EXTRA NOTES FROM ES6 EXERCISES:
 
 1. Compare Scopes of the var and let Keywords
 Notes: 
