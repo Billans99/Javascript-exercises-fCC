@@ -93,7 +93,27 @@ crash the browser.
 
 
 Data structures:
+
 Arrays()
+
+Assign variable to element in an array 
+const myArray = [1, 2, 3, 4, 5];
+const myVar = myArray[1];
+myVar is now = 2
+
+Change an element inside array index
+const myArray = [1, 2, 3, 4, 5];
+myArray[1] = "Billy";
+console.log(myArray)
+[1, "Billy, 3, 4, 5];
+
+Add elements to the start of an existing array
+let twentyThree = 'XXIII';
+let romanNumerals = ['XXI', 'XXII'];
+
+romanNumerals.unshift('XIX', 'XX');
+console.log(romanNumerals)
+['XIX', 'XX', 'XXI', 'XXII'].
 
 
 
