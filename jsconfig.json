@@ -154,26 +154,7 @@ Use spread ... to copy another array into another variable
     let thisArray = [true, true, undefined, false, null];
     let thatArray = [...thisArray];
 
-comment
 
-comment
-
-comment
-
-comment
-
-comment
-comment
-
-comment
-
-comment
-
-comment
-
-comment
-
-comment
 
 
 
