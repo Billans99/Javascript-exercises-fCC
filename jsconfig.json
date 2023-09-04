@@ -12,6 +12,7 @@
 ES6
 9. Use class Syntax to Define a Constructor Function
 Youtube javascript classes on youtube and do more little exercises
+10. revisit spread operator
 
 
 
@@ -153,6 +154,17 @@ Copy elements of array without change original using slice()
 Use spread ... to copy another array into another variable
     let thisArray = [true, true, undefined, false, null];
     let thatArray = [...thisArray];
+
+
+
+
+
+
+
+
+
+
+
 
 
 
