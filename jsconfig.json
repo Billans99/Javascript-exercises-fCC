@@ -12,7 +12,7 @@
 ES6
 9. Use class Syntax to Define a Constructor Function
 Youtube javascript classes on youtube and do more little exercises
-10. revisit spread operator
+10. revisit spread operator and youtube
 
 
 
@@ -151,13 +151,38 @@ Copy elements of array without change original using slice()
     console.log(weatherConditions);
     ['rain', 'snow', 'sleet', 'hail', 'clear'];
 
-Use spread ... to copy another array into another variable
+Use spread ... to copy another array into another variable.
+It is used to spread or expand iterable objects (like arrays or strings) 
+into individual elements.
+Some use cases: 
+Copying arrays -
     let thisArray = [true, true, undefined, false, null];
     let thatArray = [...thisArray];
-
-
-
-
+merging arrays -
+    const arr1 = [1, 2];
+    const arr2 = [3, 4];
+    const mergedArray = [...arr1, ...arr2];
+    console.log(mergedArray); // [1, 2, 3, 4]
+Adding elements to an array -
+    const originalArray = [1, 2, 3];
+    const newArray = [...originalArray, 4, 5];
+    console.log(newArray); // [1, 2, 3, 4, 5]
+Using with function arguments -
+    function sum(a, b, c) {
+    return a + b + c;
+    }
+    const numbers = [1, 2, 3];
+    const result = sum(...numbers);
+    console.log(result); // 6
+Copying objects -
+    const originalObj = { name: 'John', age: 30 };
+    const copyObj = { ...originalObj };
+    console.log(copyObj); // { name: 'John', age: 30 }
+Merging objects -
+    const obj1 = { a: 1, b: 2 };
+    const obj2 = { b: 3, c: 4 };
+    const mergedObj = { ...obj1, ...obj2 };
+    console.log(mergedObj); // { a: 1, b: 3, c: 4 }
 
 
 
