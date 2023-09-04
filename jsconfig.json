@@ -138,7 +138,7 @@ Remove middle elements of array to swap elements using splice()
     numbers.splice(startIndex, amountToDelete, 13, 14);
     console.log(numbers);
 
-Copy elements of array without change original using slice()
+Copy elements of array without changing original using slice()
     Note: 
     slice(param1, param2) takes in two parameters, first is when to start
     and the second is when to stop. It excludes the element it stops at. 
@@ -187,7 +187,7 @@ Merging objects -
 Check For The Presence of an Element With indexOf()
     notes: It will return -1 if the element is not inside array, and 
     it will return the place in the index if element is inside array.
-    
+
     let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
     fruits.indexOf('dates');
     fruits.indexOf('oranges');
@@ -196,8 +196,27 @@ Check For The Presence of an Element With indexOf()
     indexOf('dates') returns -1, indexOf('oranges') returns 2,and 
     indexOf('pears') returns 1 (the first index at which each element exists).
 
+Iterate Through All an Array's Items Using For Loops using every(),
+forEach(), map()
+    function greaterThanTen(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 10) {
+        newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+    }
+    greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
 
-
+Create complex multi-dimensional arrays
+    Notes: The very first square bracket is the first level of a 
+    multi-dimensional (nested array) the ones that come after are
+    the next level. Look at where "Array" is on the following examples.
+    First level: let myArr = ["Array"];
+    Second level: let myArr = ["Bob", "Billy", ["Array"]];
+    Third level: let myArr = ["Bob", "Billy", ["Jean", "Jack", ["Array"]]];
+    
 
 
 
