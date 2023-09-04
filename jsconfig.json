@@ -185,7 +185,23 @@ Merging objects -
     console.log(mergedObj); // { a: 1, b: 3, c: 4 }
 
 Check For The Presence of an Element With indexOf()
+    notes: It will return -1 if the element is not inside array, and 
+    it will return the place in the index if element is inside array.
     
+    let fruits = ['apples', 'pears', 'oranges', 'peaches', 'pears'];
+    fruits.indexOf('dates');
+    fruits.indexOf('oranges');
+    fruits.indexOf('pears');
+
+    indexOf('dates') returns -1, indexOf('oranges') returns 2,and 
+    indexOf('pears') returns 1 (the first index at which each element exists).
+
+
+
+
+
+
+
 
 
 
