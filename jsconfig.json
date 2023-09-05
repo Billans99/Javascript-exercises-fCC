@@ -217,13 +217,38 @@ Create complex multi-dimensional arrays
     Second level: let myArr = ["Bob", "Billy", ["Array"]];
     Third level: let myArr = ["Bob", "Billy", ["Jean", "Jack", ["Array"]]];
     
+
+
+
+    
                     Objects!
+
 Add Properties (keys) and their corresponding values to objects
+Notes: Don't forget when using bracket notation to put strings '' around the 
+property (key).
     1. tekkenCharacter.origin = 'South Korea';
 
     2. tekkenCharacter['hair color'] = 'dyed orange';
 
-
+Notes about objects:
+properties themselves can include parentheses {} after a property
+to further nest data inside a single property. These values can contain
+any data type that Javascript supports. The value of id below is a number, 
+value of date is a string, and the value of data is an object. 
+In order to modify busy to 10, nestedObject.data.onlineStatus.busy = 10; e.g.
+    let nestedObject = {
+    id: 28802695164,
+    date: 'December 31, 2016',
+    data: {
+        totalUsers: 99,
+        online: 80,
+        onlineStatus: {
+        active: 67,
+        away: 13,
+        busy: 8
+        }
+    }
+    };
 
 
 
