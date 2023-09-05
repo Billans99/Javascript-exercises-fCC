@@ -286,6 +286,16 @@ e.g.
 
     2. 'Alan' in users;
 
+Iterate through all keys in an object with a for in loop
+    const refrigerator = {
+    'milk': 1,
+    'eggs': 12,
+    };
+
+    for (const food in refrigerator) {
+    console.log(food, refrigerator[food]);
+    }
+    This code logs milk 1 and eggs 12, with each key-value pair on its own line.
 
 
 
