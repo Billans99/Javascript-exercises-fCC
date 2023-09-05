@@ -297,6 +297,7 @@ Iterate through all keys in an object with a for in loop
     }
     This code logs milk 1 and eggs 12, with each key-value pair on its own line.
 
+Generate an Array of All Object Keys with Object.keys()
 
 
 
