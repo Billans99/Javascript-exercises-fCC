@@ -217,6 +217,12 @@ Create complex multi-dimensional arrays
     Second level: let myArr = ["Bob", "Billy", ["Array"]];
     Third level: let myArr = ["Bob", "Billy", ["Jean", "Jack", ["Array"]]];
     
+                    Objects!
+Add Properties (keys) and their corresponding values to objects
+    1. tekkenCharacter.origin = 'South Korea';
+
+    2. tekkenCharacter['hair color'] = 'dyed orange';
+
 
 
 
