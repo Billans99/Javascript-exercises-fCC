@@ -328,9 +328,35 @@ The targeted object is used as an argument. Object.keys(myObject);
 
     console.log(getArrayOfUsers(users));
 
+Modify an array stored in an object:
+    let user = {
+    name: 'Kenneth',
+    age: 28,
+    data: {
+        username: 'kennethCodesAllDay',
+        joinDate: 'March 26, 2016',
+        organization: 'freeCodeCamp',
+        friends: [
+        'Sam',
+        'Kira',
+        'Tomo'
+        ],
+        location: {
+        city: 'San Francisco',
+        state: 'CA',
+        country: 'USA'
+        }
+    }
+    };
 
+    function addFriend(userObj, friend) {
+    // Only change code below this line
+    userObj.data.friends.push(friend);
+    return userObj.data.friends
+    // Only change code above this line
+    }
 
-
+    console.log(addFriend(user, 'Pete'));
 
 
 
@@ -343,6 +369,38 @@ The targeted object is used as an argument. Object.keys(myObject);
 
 
     
+                Basic Algorithym Scripting
+
+Convert Celsius to Fahrenheit
+    function convertCtoF(celsius) {
+    let fahrenheit;
+    fahrenheit = celsius * (9 / 5) + 32;
+    return fahrenheit;
+    }
+
+    convertCtoF(30);
+
+Reverse a String to make "olleh"
+    function reverseString(str) {
+    let newStr = "";
+    for (let i = str.length -1; i >= 0; i--) {
+    newStr += str[i];
+    }
+    return newStr;
+
+    }
+    reverseString("hello");
+
+
+
+
+
+
+
+
+
+
+
 
 
 
