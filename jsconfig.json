@@ -298,6 +298,35 @@ Iterate through all keys in an object with a for in loop
     This code logs milk 1 and eggs 12, with each key-value pair on its own line.
 
 Generate an Array of All Object Keys with Object.keys()
+Notes: Gather all properties in an object and put them into an array: Object.keys();
+The targeted object is used as an argument. Object.keys(myObject);
+    let users = {
+    Alan: {
+        age: 27,
+        online: false
+    },
+    Jeff: {
+        age: 32,
+        online: true
+    },
+    Sarah: {
+        age: 48,
+        online: false
+    },
+    Ryan: {
+        age: 19,
+        online: true
+    }
+    };
+
+    function getArrayOfUsers(obj) {
+    // Only change code below this line
+    const allUsers = Object.keys(obj);
+    return allUsers;
+    // Only change code above this line
+    }
+
+    console.log(getArrayOfUsers(users));
 
 
 
@@ -305,6 +334,15 @@ Generate an Array of All Object Keys with Object.keys()
 
 
 
+
+
+
+
+
+
+
+
+    
 
 
 
