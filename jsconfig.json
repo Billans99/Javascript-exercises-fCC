@@ -220,8 +220,12 @@ Create complex multi-dimensional arrays
 
 
 
-    
+
                     Objects!
+
+Notes:
+    Objects are property-value stores. An intuitive way to structure data. 
+    They have a very fast look-up time. 
 
 Add Properties (keys) and their corresponding values to objects
 Notes: Don't forget when using bracket notation to put strings '' around the 
@@ -250,10 +254,37 @@ In order to modify busy to 10, nestedObject.data.onlineStatus.busy = 10; e.g.
     }
     };
 
+Access Property names with bracket notations:
+    let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28,
+    bananas: 13,
+    grapes: 35,
+    strawberries: 27
+    };
 
+    function checkInventory(scannedItem) {
+    // Only change code below this line
+    let scanned = foods[scannedItem]
+    // Only change code above this line
+    return scanned;
+    }
+    console.log(checkInventory("apples"));
 
+Delete Object properties using Delete keyword
+    To remove apples property (also known as key) from foods object, see below:
+    delete foods.apples;
 
+    Bracket notation can also work e.g.
+    delete foods['oranges'];
 
+Check if an Object has a Property:
+Notes: Javascript has two ways to check. 1. hasOwnProperty() and 2. in keyword.
+e.g.
+    1. users.hasOwnProperty('Alan');
+
+    2. 'Alan' in users;
 
 
 
