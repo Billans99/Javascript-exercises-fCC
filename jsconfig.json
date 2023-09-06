@@ -403,19 +403,20 @@ For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 
 
 
-ASK BAKER WHY THIS DIDNT WORK FOR FACTORIAlIZING A NUMBER QUESTION
+Factorialise a number
+Notes: 5! = 1 * 2 * 3 * 4 * 5 = 120
     function factorialize(num) {
-    let result = 1;
-
-    if (result >= num) {
-    return result;
-    } else {
-    result *= num;
-    factorialize(num -1); 
+    let product = 1;
+    for (let i = 1; i <= num; i++) {
+        product *= i;
     }
+    return product;
     }
 
     factorialize(5);
+
+Find the Longest Word in a String
+
 
 
 
