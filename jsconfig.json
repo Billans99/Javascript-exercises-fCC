@@ -447,6 +447,9 @@ Confirm the Ending of string
     }
     confirmEnding("Bastian", "n"); 
 
+Repeat a string Repeat a string
+    
+
 
 
 
