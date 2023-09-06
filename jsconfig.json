@@ -458,6 +458,8 @@ Repeat a string Repeat a string
 
     repeatStringNumTimes("abc", 3);
 
+Truncate a String
+
 
 
 
