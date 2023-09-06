@@ -416,6 +416,26 @@ Notes: 5! = 1 * 2 * 3 * 4 * 5 = 120
     factorialize(5);
 
 Find the Longest Word in a String
+    function findLongestWordLength(str) {
+    let wordsArray = str.split(" ");
+    let maxLength = 0;
+
+    for (let i = 0; i < wordsArray.length; i++) {
+        if (wordsArray[i].length > maxLength) {
+        maxLength = wordsArray[i].length;
+        }
+    }
+
+    return maxLength;
+    }
+
+    findLongestWordLength("The quick brown fox jumped over the lazy dog");
+
+
+
+
+
+
 
 
 
