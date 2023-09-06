@@ -448,7 +448,15 @@ Confirm the Ending of string
     confirmEnding("Bastian", "n"); 
 
 Repeat a string Repeat a string
-    
+    function repeatStringNumTimes(str, num) {
+    let combined = "";
+    for (let i = 0; i < num; i++) {
+    combined += str;
+    }
+    return combined;
+    }
+
+    repeatStringNumTimes("abc", 3);
 
 
 
