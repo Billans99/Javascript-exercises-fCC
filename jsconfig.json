@@ -984,7 +984,7 @@ function frankenSplice(arr1, arr2, n) {
     resultArray.splice(n + i, 0, arr1[i]);
   }
 
-
+return resultArray;
 
 
 
