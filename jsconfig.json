@@ -593,7 +593,7 @@ Remove middle elements of array to swap elements using splice()
     console.log(numbers);
 
 Copy elements of array without changing original using slice()
-Notes: CAN BE USED with STRINGS TOO
+Notes: CAN BE USED WITH STRINGS TOO
     Note: 
     slice(param1, param2) takes in two parameters, first is when to start
     and the second is when to stop. It excludes the element it stops at. 
@@ -959,7 +959,20 @@ true and false.
     booWho(null);
 
 Title Case a Sentence
-Return provided string with each first letter capitalized.
+Return provided string with each first letter capitalized and the rest lowercase
+    function titleCase(str) {
+    
+    // console.log(lowerCaseStr);
+    let arr = str.split(' '); 
+
+    for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1).toLowerCase();       
+    } 
+
+    return arr.join(' '); 
+    }
+
+
 
 
 
