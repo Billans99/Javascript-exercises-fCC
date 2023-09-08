@@ -973,7 +973,10 @@ Return provided string with each first letter capitalized and the rest lowercase
     }
 
 Slice and Splice
-
+Copy the first array into the second, by the index specified. 
+function frankenSplice(arr1, arr2, n) {
+  // Make a copy of the second array to keep the input arrays unchanged
+  const resultArray = arr2.slice();
 
 
 
