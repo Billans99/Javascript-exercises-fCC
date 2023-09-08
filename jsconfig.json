@@ -958,6 +958,8 @@ true and false.
 
     booWho(null);
 
+Title Case a Sentence
+Return provided string with each first letter capitalized.
 
 
 
