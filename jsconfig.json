@@ -993,7 +993,10 @@ Copy the first array into the second, by the index specified.
     console.log(result); // Output: [4, 5, 1, 2, 3, 6]
 
 Falsy Bouncer
+Remove all falsy values from an array
+Notes: Falsy values are: False, null, 0, "", undefined, NaN
 
+comment
 
 
 
