@@ -974,19 +974,23 @@ Return provided string with each first letter capitalized and the rest lowercase
 
 Slice and Splice
 Copy the first array into the second, by the index specified. 
-    function frankenSplice(arr1, arr2, n) {
+    function insertArrayAt(array1, array2, index) {
     // Make a copy of the second array to keep the input arrays unchanged
-    const resultArray = arr2.slice();
-    
-    // Loop through the elements of the first array and insert them into the result array at the specified index
-    for (let i = 0; i < arr1.length; i++) {
-        resultArray.splice(n + i, 0, arr1[i]);
-    }
-    
+    const resultArray = array2.slice();
+
+    // Insert elements from the first array into the result array using concat and splice
+    resultArray.splice(index, 0, ...array1);
+
     return resultArray;
     }
 
-    frankenSplice([1, 2, 3], [4, 5, 6], 1);
+    // Example usage:
+    const array1 = [1, 2, 3];
+    const array2 = [4, 5, 6];
+    const index = 2;
+    const result = insertArrayAt(array1, array2, index);
+
+    console.log(result); // Output: [4, 5, 1, 2, 3, 6]
 
 Falsy Bouncer
 
