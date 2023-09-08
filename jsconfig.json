@@ -972,7 +972,7 @@ Return provided string with each first letter capitalized and the rest lowercase
     return arr.join(' '); 
     }
 
-
+Slice and Splice
 
 
 
