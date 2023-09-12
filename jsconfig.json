@@ -996,6 +996,14 @@ Falsy Bouncer
 Remove all falsy values from an array
 Notes: Falsy values are: False, null, 0, "", undefined, NaN
 
+function bouncer(arr) {
+  const filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) filteredArr.push(arr[i]);
+  }
+  return filteredArr;
+}
+
 
 
 
