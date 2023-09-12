@@ -997,6 +997,7 @@ Remove all falsy values from an array
 Notes: Falsy values are: False, null, 0, "", undefined, NaN
 
 comment
+s
 
 
 
