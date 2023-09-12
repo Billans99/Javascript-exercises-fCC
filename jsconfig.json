@@ -1004,7 +1004,11 @@ function bouncer(arr) {
   return filteredArr;
 }
 
+OR 
 
+function bouncer(arr) {
+  return arr.filter(Boolean);
+}
 
 
 
