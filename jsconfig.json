@@ -1119,7 +1119,14 @@ Use Dot Notation to Access the Properties of an Object
 
 Create a method on an object
 notes: methods are functions that are used in class and objects
+    let dog = {
+    name: "Spot",
+    numLegs: 4,
+    sayLegs: function() {return "This dog has " + dog.numLegs + " legs."}
 
+    };
+
+    dog.sayLegs();
 
 
 
