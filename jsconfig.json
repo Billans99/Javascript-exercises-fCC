@@ -1117,6 +1117,8 @@ Use Dot Notation to Access the Properties of an Object
     console.log(dog.name);
     console.log(dog.numLegs);
 
+Create a method on an object
+
 
 
 
