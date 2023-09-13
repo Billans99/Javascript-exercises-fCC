@@ -1137,6 +1137,12 @@ Make Code More Reusable with the THIS Keyword
     dog.sayLegs();
 
 Define a Constructor Function
+    function Dog() {
+    this.name = 'yoza',
+    this.color = 'black',
+    this.numLegs = 4
+    }
+
 
 
 
