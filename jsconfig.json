@@ -1125,8 +1125,9 @@ notes: methods are functions that are used in class and objects
     sayLegs: function() {return "This dog has " + dog.numLegs + " legs."}
 
     };
-
     dog.sayLegs();
+
+Make Code More Reusable with the THIS Keyword
 
 
 
