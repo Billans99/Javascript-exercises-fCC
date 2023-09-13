@@ -1143,6 +1143,7 @@ Define a Constructor Function
     this.numLegs = 4
     }
 
+Use a Constructor to Create Objects
 
 
 
