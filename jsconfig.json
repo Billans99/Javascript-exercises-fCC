@@ -1118,6 +1118,8 @@ Use Dot Notation to Access the Properties of an Object
     console.log(dog.numLegs);
 
 Create a method on an object
+notes: methods are functions that are used in class and objects
+
 
 
 
