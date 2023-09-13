@@ -996,22 +996,22 @@ Falsy Bouncer
 Remove all falsy values from an array
 Notes: Falsy values are: False, null, 0, "", undefined, NaN
 
-function bouncer(arr) {
-  const trueArray = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i]) {
-      trueArray.push(arr[i]);
+    function bouncer(arr) {
+    const trueArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i]) {
+        trueArray.push(arr[i]);
+        }
     }
-  }
-  return trueArray;
-}
-bouncer([7, "ate", "", false, 9]);
+    return trueArray;
+    }
+    bouncer([7, "ate", "", false, 9]);
 
-OR 
+    OR 
 
-function bouncer(arr) {
-  return arr.filter(Boolean);
-}
+    function bouncer(arr) {
+    return arr.filter(Boolean);
+    }
 
 Where do I Belong
 Return the lowest index at which a value (second argument) 
