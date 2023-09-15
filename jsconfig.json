@@ -1233,7 +1233,13 @@ properties to the array prototypeProps:
     console.log(prototypeProps);
 
 Understand the Constructor Property
+Notes: Here's how to check if duck is from Bird constructor and also
+    if beagle is from the Dog constructor:
+    let duck = new Bird();
+    let beagle = new Dog();
 
+    console.log(duck.constructor === Bird); 
+    console.log(beagle.constructor === Dog);
 
 
 
