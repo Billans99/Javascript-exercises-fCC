@@ -1244,8 +1244,19 @@ object.
     The answers will print true for both.
 Since these constructor properties can be overrided, it's better to use instanceOf.
 Write a join dogfraternity function:
+    function Dog(name) {
+    this.name = name;
+    }
 
+    function joinDogFraternity(candidate) {
+    if (candidate.constructor === Dog) {
+        return true;
+    } else {
+        return false;
+    }
+    }
 
+Change the Prototype to a New Object
 
 
 
