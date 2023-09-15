@@ -1309,6 +1309,7 @@ Use isPrototypeOf to check the prototype of beagle
 
     Dog.prototype.isPrototypeOf(beagle);
 
+Understand the Prototype Chain
 
 
 
