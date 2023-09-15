@@ -1310,6 +1310,8 @@ Use isPrototypeOf to check the prototype of beagle
     Dog.prototype.isPrototypeOf(beagle);
 
 Understand the Prototype Chain
+Notes: all objects have a prototype. Prototype is also an object. A prototype has a prototype in itself,
+which is 'object'. 
 
 
 
