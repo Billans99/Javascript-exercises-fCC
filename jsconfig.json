@@ -1299,8 +1299,15 @@ the constructor manually afterwards to the prototype.
     }
     };
 
-Understand Where an Object’s Prototype Comes From
+Understand Where an Object’s Prototype Comes From using isPrototypeOf
+Use isPrototypeOf to check the prototype of beagle
+    function Dog(name) {
+    this.name = name;
+    }
 
+    let beagle = new Dog("Snoopy");
+
+    Dog.prototype.isPrototypeOf(beagle);
 
 
 
