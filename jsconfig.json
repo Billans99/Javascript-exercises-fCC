@@ -1208,7 +1208,29 @@ instances of that object.
     let beagle = new Dog("Snoopy");
 
 Iterate Over All Properties
+Here is how you add duck's own properties to the array ownProps and prototype
+properties to the array prototypeProps:
+    function Dog(name) {
+    this.name = name;
+    }
 
+    Dog.prototype.numLegs = 4;
+
+    let beagle = new Dog("Snoopy");
+
+    let ownProps = [];
+    let prototypeProps = [];
+
+    // Only change code below this line
+    for (let property in beagle) {
+    if (beagle.hasOwnProperty(property)) {
+        ownProps.push(property)
+    } else {
+        prototypeProps.push(property);
+    }
+    }
+    console.log(ownProps);
+    console.log(prototypeProps);
 
 
 
