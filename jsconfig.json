@@ -1236,12 +1236,11 @@ Understand the Constructor Property
 Notes: duck and beagle have its own constructor property. Here's how to check
 if duck is from Bird constructor object and if beagle is from the Dog constructor
 object.
-    let duck = new Bird();
-    let beagle = new Dog();
-
-    console.log(duck.constructor === Bird); 
-    console.log(beagle.constructor === Dog);
-    The answers will print true for both.
+let duck = new Bird();
+let beagle = new Dog();
+console.log(duck.constructor === Bird); 
+console.log(beagle.constructor === Dog);
+The answers will print true for both.
 Since these constructor properties can be overrided, it's better to use instanceOf.
 Write a join dogfraternity function:
     function Dog(name) {
@@ -1257,8 +1256,50 @@ Write a join dogfraternity function:
     }
 
 Change the Prototype to a New Object
+Up until now we would add prototype props individually e.g.
+Bird.prototype.numLegs = 2;
+A more efficient way is to set the prototype to a new object that already contains
+the properties. This way, the properties are added all at once e.g.
+    function Dog(name) {
+    this.name = name;
+    }
 
+    Dog.prototype = {
 
+    };
+
+    Dog.prototype = {
+    numLegs: 4,
+    eat: function() {
+        console.log('yum yum yum')
+    },
+    describe: function() {
+        console.log('I am ' + this.name + 'type of dawg!')
+    }
+    };
+
+Remember to Set the Constructor Property when Changing the Prototype
+Notes: When manually making prototype property, it will override the constructor
+property. So duck will no longer be say 'true' when asked if its from the bird
+constructor. However you can still say ask for 'instanceof'. However, just add
+the constructor manually afterwards to the prototype.
+    function Dog(name) {
+    this.name = name;
+    }
+
+    // Only change code below this line
+    Dog.prototype = {
+    constructor: Dog,
+    numLegs: 4,
+    eat: function() {
+        console.log("nom nom nom");
+    },
+    describe: function() {
+        console.log("My name is " + this.name);
+    }
+    };
+
+Understand Where an Object’s Prototype Comes From
 
 
 
