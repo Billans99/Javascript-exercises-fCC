@@ -1198,7 +1198,16 @@ The following code adds all of the own properties of canary to the array ownProp
 }
 
 Use Prototype Properties to Reduce Duplicate Code
+Prototypes properties are used when that property will be applicable to all
+instances of that object.
+    function Dog(name) {
+    this.name = name;
+    Dog.prototype.numLegs = 4;
+    }
 
+    let beagle = new Dog("Snoopy");
+
+Iterate Over All Properties
 
 
 
