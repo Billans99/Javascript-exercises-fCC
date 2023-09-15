@@ -1232,6 +1232,8 @@ properties to the array prototypeProps:
     console.log(ownProps);
     console.log(prototypeProps);
 
+Understand the Constructor Property
+
 
 
 
