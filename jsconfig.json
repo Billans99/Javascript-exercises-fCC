@@ -1310,8 +1310,8 @@ Use isPrototypeOf to check the prototype of beagle
     Dog.prototype.isPrototypeOf(beagle);
 
 Understand the Prototype Chain
-Notes: all objects have a prototype. Because prototype is an object, a prototype has a prototype in itself,
-which is 'object'. 
+Notes: all objects have a prototype. Because prototype is an object, a 
+prototype has a prototype in itself, which is 'object'. 
     function Dog(name) {
     this.name = name;
     }
@@ -1322,7 +1322,8 @@ which is 'object'.
 
     Object.prototype.isPrototypeOf(Dog.prototype);
 
-
+Use Inheritance So You Don't Repeat Yourself
+Notes: There's a principle in programming called Don't Repeat Yourself (DRY). 
 
 
 
