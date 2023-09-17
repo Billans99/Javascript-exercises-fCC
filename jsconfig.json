@@ -1397,7 +1397,29 @@ Inherit Behaviors from a Supertype
     duck.eat(); // = nom nom nom
     console.log(duck instanceof Animal); // = true
 
-    
+Set the Child's Prototype to an Instance of the 
+Notes: This challenge covers the next step: set the prototype of the subtype 
+(or child)—in this case, Dog—to be an instance of Animal. Remember that the 
+prototype is like the "recipe" for creating an object. In a way, the recipe 
+for Dog now includes all the key "ingredients" from Animal. Dog inherits all
+of Animal's properties, including the eat method.
+    function Animal() { }
+
+    Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log("nom nom nom");
+    }
+    };
+
+    function Dog() { }
+
+    // Only change code below this line
+    Dog.prototype = Object.create(Animal.prototype);
+
+    let beagle = new Dog();
+
+Reset an Inherited Constructor Property
 
 
 
