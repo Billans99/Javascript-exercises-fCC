@@ -1324,8 +1324,80 @@ prototype has a prototype in itself, which is 'object'.
 
 Use Inheritance So You Don't Repeat Yourself
 Notes: There's a principle in programming called Don't Repeat Yourself (DRY). 
+Instead of repeating like this:
 
+function Cat(name) {
+  this.name = name;
+}
 
+Cat.prototype = {
+  constructor: Cat,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Bear(name) {
+  this.name = name;
+}
+
+Bear.prototype = {
+  constructor: Bear,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  
+};
+Instead of that, take the eat function out of bear and cat prototypes, and just
+add it to the animal supertype (parent) like this:
+    function Cat(name) {
+    this.name = name;
+    }
+
+    Cat.prototype = {
+    constructor: Cat,
+    };
+
+    function Bear(name) {
+    this.name = name;
+    }
+
+    Bear.prototype = {
+    constructor: Bear,
+    };
+
+    function Animal() { }
+
+    Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log("nom nom nom");
+    }
+    };
+
+Inherit Behaviors from a Supertype
+    function Animal() { }
+
+    Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+        console.log("nom nom nom");
+    }
+    };
+
+    // Only change code below this line
+    let duck = Object.create(Animal.prototype);
+    let beagle = Object.create(Animal.prototype);
+    duck.eat(); // = nom nom nom
+    console.log(duck instanceof Animal); // = true
+
+    
 
 
 
