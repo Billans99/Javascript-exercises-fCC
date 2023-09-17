@@ -1322,7 +1322,7 @@ which is 'object'.
 
     Object.prototype.isPrototypeOf(Dog.prototype);
 
-
+s
 
 
 
