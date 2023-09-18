@@ -1463,7 +1463,13 @@ print Woof! to the console.
     let beagle = new Dog();
 
 Override Inherited Methods
+Notes: Previously we learned to reference a child's prototype to its parents 
+prototype e.g. 
+ChildObject.prototype = Object.create(ParentObject.prototype);
 
+Then the child object could receiveits own methods by chaining it
+to its own prototype e.g.
+ChildObject.prototype.methodName = function() {...};
 
 
 
