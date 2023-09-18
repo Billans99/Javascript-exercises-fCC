@@ -1397,7 +1397,7 @@ Inherit Behaviors from a Supertype
     duck.eat(); // = nom nom nom
     console.log(duck instanceof Animal); // = true
 
-Set the Child's Prototype to an Instance of the 
+Set the Child's Prototype to an Instance of the Parent
 Notes: This challenge covers the next step: set the prototype of the subtype 
 (or child)—in this case, Dog—to be an instance of Animal. Remember that the 
 prototype is like the "recipe" for creating an object. In a way, the recipe 
@@ -1434,10 +1434,15 @@ of Bird to the Bird object:
     duck.constructor
 
 Add Methods After Inheritance
-
-
-
-
+Notes: A constructor function that inherits its prototype object from a 
+supertype constructor function can still have its own methods in addition 
+to inherited methods. Here's how to add .fly method to bird prototype.
+    Bird.prototype.fly = function() {
+    console.log("I'm flying!");
+    };
+    Now you can use that method by going 
+    duck.fly();
+    
 
 
 
