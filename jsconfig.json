@@ -1471,7 +1471,21 @@ Then the child object could receiveits own methods by chaining it
 to its own prototype e.g.
 ChildObject.prototype.methodName = function() {...};
 
+It's possible to override an inherited method. It's done the same way - by 
+adding a method to ChildObject.prototype using the same method name as the 
+one to override. Here's an example of Bird overriding the eat() method 
+inherited from Animal:
+    function Animal() { }
+    Animal.prototype.eat = function() {
+    return "nom nom nom";
+    };
+    function Bird() { }
 
+    Bird.prototype = Object.create(Animal.prototype);
+
+    Bird.prototype.eat = function() {
+    return "peck peck peck";
+    };
 
 
 
