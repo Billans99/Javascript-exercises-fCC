@@ -1433,6 +1433,7 @@ of Bird to the Bird object:
     Bird.prototype.constructor = Bird;
     duck.constructor
 
+
 Add Methods After Inheritance
 Notes: A constructor function that inherits its prototype object from a 
 supertype constructor function can still have its own methods in addition 
@@ -1461,6 +1462,7 @@ print Woof! to the console.
     // Only change code above this line
 
     let beagle = new Dog();
+
 
 Override Inherited Methods
 Notes: Previously we learned to reference a child's prototype to its parents 
@@ -1493,7 +1495,48 @@ inherited from Animal:
     return "peck peck peck";
     };
 
+
 Use a Mixin to Add Common Behavior Between Unrelated Objects
+Notes: As you have seen, behavior is shared through inheritance. However, there are cases when 
+inheritance is not the best solution. Inheritance does not work well for unrelated objects like 
+Bird and Airplane. They can both fly, but a Bird is not a type of Airplane and vice versa.
+
+For unrelated objects, it's better to use mixins. A mixin allows other objects to use a collection 
+of functions.
+let flyMixin = function(obj) {
+  obj.fly = function() {
+    console.log("Flying, wooosh!");
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
