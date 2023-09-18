@@ -1433,6 +1433,8 @@ of Bird to the Bird object:
     Bird.prototype.constructor = Bird;
     duck.constructor
 
+Add Methods After Inheritance
+
 
 
 
