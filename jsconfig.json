@@ -1462,6 +1462,7 @@ print Woof! to the console.
 
     let beagle = new Dog();
 
+Override Inherited Methods
 
 
 
