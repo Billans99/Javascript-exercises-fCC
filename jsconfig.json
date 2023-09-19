@@ -1571,6 +1571,7 @@ immediately invoked function expression or IIFE. Here's another example:
     console.log('A cozy nest is ready');
     })();
 
+Use an IIFE to Create a Module
 
 
 
