@@ -1503,15 +1503,35 @@ Bird and Airplane. They can both fly, but a Bird is not a type of Airplane and v
 
 For unrelated objects, it's better to use mixins. A mixin allows other objects to use a collection 
 of functions.
-let flyMixin = function(obj) {
-  obj.fly = function() {
-    console.log("Flying, wooosh!");
-  }
-};
+    let flyMixin = function(obj) {
+    obj.fly = function() {
+        console.log("Flying, wooosh!");
+    }
+    };
+    The flyMixin takes any object and gives it the fly method.
+    let bird = {
+    name: "Donald",
+    numLegs: 2
+    };
+
+    let plane = {
+    model: "777",
+    numPassengers: 524
+    };
+
+    flyMixin(bird);
+    flyMixin(plane);
+
+    Here bird and plane are passed into flyMixin, which then assigns the fly function to each object.
+    Now bird and plane can both fly:
+
+    bird.fly();
+    plane.fly();
 
 
-
-
+Use Closure to Protect Properties Within an Object from Being Modified Externally
+Notes: In the previous challenge, bird had a public property name. It is considered public because 
+it can be accessed and changed outside of bird's definition.
 
 
 
