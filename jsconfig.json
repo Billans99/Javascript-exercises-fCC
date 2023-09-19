@@ -1558,7 +1558,7 @@ This changes the scope of that variable to be within the constructor function ve
 
     }
 
-
+Understand the Immediately Invoked Function Expression (IIFE)
 
 
 
