@@ -1806,6 +1806,7 @@ join(). The array tabs is part of the Window object that stores the name of the 
 
 Avoid Mutations and Side Effects Using Functional Programming
 s
+s
 
 
 
