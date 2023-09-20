@@ -1805,7 +1805,7 @@ join(). The array tabs is part of the Window object that stores the name of the 
     console.log(finalTabs.tabs);
 
 Avoid Mutations and Side Effects Using Functional Programming
-
+s
 
 
 
