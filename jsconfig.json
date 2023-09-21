@@ -1793,7 +1793,8 @@ join(). The array tabs is part of the Window object that stores the name of the 
     };
 
     // Let's create three browser windows
-    const workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp']); // Your mailbox, drive, and other work sites
+    const workWindow = new Window(['GMail', 'Inbox', 'Work mail', 'Docs', 'freeCodeCamp']); // Your mailbox, 
+    drive, and other work sites
     const socialWindow = new Window(['FB', 'Gitter', 'Reddit', 'Twitter', 'Medium']); // Social sites
     const videoWindow = new Window(['Netflix', 'YouTube', 'Vimeo', 'Vine']); // Entertainment sites
 
@@ -1805,7 +1806,9 @@ join(). The array tabs is part of the Window object that stores the name of the 
     console.log(finalTabs.tabs);
 
 Avoid Mutations and Side Effects Using Functional Programming
-
+If you haven't already figured it out, the issue in the previous challenge was with the splice call in the 
+tabClose() function. Unfortunately, splice changes the original array it is called on, so the second call 
+to it used a modified array, and gave unexpected results.
 
 
 
