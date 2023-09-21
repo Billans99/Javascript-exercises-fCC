@@ -1806,12 +1806,22 @@ join(). The array tabs is part of the Window object that stores the name of the 
     console.log(finalTabs.tabs);
 
 Avoid Mutations and Side Effects Using Functional Programming
-If you haven't already figured it out, the issue in the previous challenge was with the splice call in the 
+Notes: If you haven't already figured it out, the issue in the previous challenge was with the splice call in the 
 tabClose() function. Unfortunately, splice changes the original array it is called on, so the second call 
 to it used a modified array, and gave unexpected results.
 
+Recall that in functional programming, changing or altering things is called mutation, and the outcome is called a 
+side effect. A function, ideally, should be a pure function, meaning that it does not cause any side effects.
+    // The global variable
+    let fixedValue = 4;
 
-
+    function incrementer() {
+    // Only change code below this line
+    return fixedValue + 1;
+    // Only change code above this line
+    }
+    
+    let newValue = incrementer();
 
 
 
