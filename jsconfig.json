@@ -1823,6 +1823,7 @@ side effect. A function, ideally, should be a pure function, meaning that it doe
     
     let newValue = incrementer();
 
+Pass Arguments to Avoid External Dependence in a Function
 
 
 
