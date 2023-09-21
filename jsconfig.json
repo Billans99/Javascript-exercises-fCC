@@ -1908,7 +1908,7 @@ the users as elements. For simplicity, the example only uses the first argument 
     // Only change code above this line
 
     console.log(JSON.stringify(ratings));
-    
+
     Here's another example:
     const users = [
     { name: 'John', age: 34 },
@@ -1919,6 +1919,7 @@ the users as elements. For simplicity, the example only uses the first argument 
     const names = users.map(user => user.name);
     console.log(names);
 
+Implement map on a Prototype
 
 
 
