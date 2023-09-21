@@ -1861,7 +1861,8 @@ function, and not on any global object or variable.
 Adding one to a number is not very exciting, but we can apply these principles when working with arrays or more 
 complex objects.
     // The global variable
-    const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
+    const bookList = ["The Hound of the Baskervilles", "On The Electrodynamics of Moving Bodies", "Philosophiæ 
+    Naturalis Principia Mathematica", "Disquisitiones Arithmeticae"];
 
     // Change code below this line
     function add(arr, bookName) {
@@ -1886,6 +1887,43 @@ complex objects.
     }
 
 Use the map Method to Extract Data from an Array
+Notes: So far we have learned to use pure functions to avoid side effects in a program. Also, we have seen the
+value in having a function only depend on its input arguments. Functions are considered first class objects in 
+JavaScript, which means they can be used like any other object. They can be saved in variables, stored in an 
+object, or passed as function arguments.
+
+The map method iterates over each item in an array and returns a new array containing the results of calling the 
+callback function on each element. It does this without mutating the original array.
+
+When the callback is used, it is passed three arguments. The first argument is the current element being processed. 
+The second is the index of that element and the third is the array upon which the map method was called.
+
+See below for an example using the map method on the users array to return a new array containing only the names of 
+the users as elements. For simplicity, the example only uses the first argument of the callback.
+    // Only change code below this line
+    const ratings = watchList.map(item => ({
+    title: item["Title"],
+    rating: item["imdbRating"]
+    }));
+    // Only change code above this line
+
+    console.log(JSON.stringify(ratings));
+    
+    Here's another example:
+    const users = [
+    { name: 'John', age: 34 },
+    { name: 'Amy', age: 20 },
+    { name: 'camperCat', age: 10 }
+    ];
+
+    const names = users.map(user => user.name);
+    console.log(names);
+
+
+
+
+
+
 
 
 
