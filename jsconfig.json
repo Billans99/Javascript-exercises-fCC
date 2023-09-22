@@ -2092,6 +2092,16 @@ Note: Your function should not use any kind of for or while loops or the forEach
 
 Sort an Array Alphabetically using the sort Method
 Notes: The sort method sorts the elements of an array according to the callback function.
+For example:
+
+function ascendingOrder(arr) {
+  return arr.sort(function(a, b) {
+    return a - b;
+  });
+}
+
+ascendingOrder([1, 5, 2, 3, 4]);
+This would return the value [1, 2, 3, 4, 5].
 
 
 
