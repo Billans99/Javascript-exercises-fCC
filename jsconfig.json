@@ -2090,6 +2090,7 @@ Note: Your function should not use any kind of for or while loops or the forEach
     const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
     console.log(squaredIntegers);
 
+Sort an Array Alphabetically using the sort Method
 
 
 
