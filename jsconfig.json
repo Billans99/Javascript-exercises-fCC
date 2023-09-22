@@ -2091,7 +2091,7 @@ Note: Your function should not use any kind of for or while loops or the forEach
     console.log(squaredIntegers);
 
 Sort an Array Alphabetically using the sort Method
-
+Notes: The sort method sorts the elements of an array according to the callback function.
 
 
 
