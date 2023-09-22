@@ -1960,7 +1960,7 @@ under the age of 30. For simplicity, the example only uses the first argument of
     { name: 'Amy', age: 20 },
     { name: 'camperCat', age: 10 }
     ];
-
+    // The 1st arg below is the element, 2nd is index of that element, 3rd is the array it is called upon.
     const usersUnder30 = users.filter(user => user.age < 30);
     console.log(usersUnder30); 
 
