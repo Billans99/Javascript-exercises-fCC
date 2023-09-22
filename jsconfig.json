@@ -2007,6 +2007,8 @@ array with only the first three items.
     return copiedCity;
     }
  
+Combine Two Arrays Using the concat Method
+
 
 
 
