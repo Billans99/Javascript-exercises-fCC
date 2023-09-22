@@ -2038,6 +2038,7 @@ which mutates that array. Here's an example:
     const second = [4, 5];
     nonMutatingPush(first, second);
 
+Use the reduce Method to Analyze Data
 
 
 
