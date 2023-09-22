@@ -2001,7 +2001,12 @@ Return Part of an Array Using the slice Method
 Remove Elements from an Array Using slice Instead of splice
 by using slice instead of splice. It should limit the provided cities array to a length of 3, and return a new 
 array with only the first three items.
-
+    function nonMutatingSplice(cities) {
+    let copiedCity = '';
+    copiedCity = cities.slice(0, 3);
+    return copiedCity;
+    }
+ 
 
 
 
