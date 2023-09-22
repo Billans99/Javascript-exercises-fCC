@@ -1955,16 +1955,23 @@ is the index of that element and the third is the array upon which the filter me
 
 See below for an example using the filter method on the users array to return a new array containing only the users 
 under the age of 30. For simplicity, the example only uses the first argument of the callback.
-    const users = [
-    { name: 'John', age: 34 },
-    { name: 'Amy', age: 20 },
-    { name: 'camperCat', age: 10 }
-    ];
-    // The 1st arg below is the element, 2nd is index of that element, 3rd is the array it is called upon.
-    const usersUnder30 = users.filter(user => user.age < 30);
-    console.log(usersUnder30); 
+const users = [
+{ name: 'John', age: 34 },
+{ name: 'Amy', age: 20 },
+{ name: 'camperCat', age: 10 }
+];
+// The 1st arg below is the element, 2nd is index of that element, 3rd is the array it is called upon.
+const usersUnder30 = users.filter(user => user.age < 30);
+console.log(usersUnder30); 
+Here's the exercise
+    const filteredList = watchList
+    .filter(movie => movie.imdbRating >= 8.0)
+    .map(movie => ({ title: movie['Title'], rating: movie['imdbRating'] }));
+    // Only change code above this line
 
+    console.log(filteredList);
 
+Implement the filter Method on a Prototype
 
 
 
