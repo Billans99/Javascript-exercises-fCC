@@ -1930,7 +1930,10 @@ You might learn a lot about the map method if you implement your own version of 
 loop or Array.prototype.forEach().
 
 Write your own Array.prototype.myMap(), which should behave exactly like Array.prototype.map(). You should not use 
-the built-in map method. The Array instance can be accessed in the myMap method using this.
+the built-in map method. The Array instance can be accessed in the myMap method using this. Don't forget, in the 
+example below, 
+when the callback is used, it is passed three arguments. The first argument is the current element being 
+processed. The second is the index of that element and the third is the array upon which the map method was called.
     Array.prototype.myMap = function(callback) {
     const newArray = [];
     // Only change code below this line
