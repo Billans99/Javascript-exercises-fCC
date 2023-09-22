@@ -1944,6 +1944,7 @@ processed. The second is the index of that element and the third is the array up
     return newArray;
     };
 
+Use the filter Method to Extract Data from an Array
 
 
 
