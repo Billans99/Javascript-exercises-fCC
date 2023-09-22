@@ -1999,7 +1999,8 @@ Return Part of an Array Using the slice Method
     sliceArray(inputAnim, 1, 3);
 
 Remove Elements from an Array Using slice Instead of splice
-
+by using slice instead of splice. It should limit the provided cities array to a length of 3, and return a new 
+array with only the first three items.
 
 
 
