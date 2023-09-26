@@ -2164,6 +2164,7 @@ Please not that the below example, /\W/ will split the sentence by any NON word 
 
     splitify("Hello World,I-am code"); 
 
+Combine an Array into a String Using the join Method
 
 
 
