@@ -2145,7 +2145,11 @@ character to use to break up the string or a regular expression. For example, if
 an array of words, and if the delimiter is an empty string, you get an array of each character in the string.
 
 Here are two examples that split one string by spaces, then another by digits using a regular expression:
+const str = "Hello World";
+const bySpace = str.split(" ");
 
+const otherString = "How9are7you2today";
+const byDigits = otherString.split(/\d/);
 
 
 
