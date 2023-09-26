@@ -2139,7 +2139,7 @@ function should return a new array, and not mutate the globalArray variable.
 
     nonMutatingSort(globalArray);
 
-
+Split a String into an Array Using the split Method
 
 
 
