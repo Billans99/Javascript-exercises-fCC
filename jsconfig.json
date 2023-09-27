@@ -2153,7 +2153,7 @@ const byDigits = otherString.split(/\d/);
 
 bySpace would have the value ["Hello", "World"] and byDigits would have the value ["How", "are", "you", "today"].
 Since strings are immutable, the split method makes it easier to work with them.
-Please not that the below example, /\W/ will split the sentence by any NON word character including spaces:
+Please note that the below example, /\W/ will split the sentence by any NON word character including spaces:
     function splitify(str) {
     // Only change code below this line
     let arrayWords = str.split(/\W/);
@@ -2184,6 +2184,20 @@ delimiter that is used to separate the array elements in the string. Here's an e
         sentensify("May-the-force-be-with-you");
 
 Apply Functional Programming to Convert Strings to URL Slugs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
