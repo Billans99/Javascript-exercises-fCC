@@ -2211,7 +2211,8 @@ value - true if all values meet the criteria, false if not.
     checkPositive([1, 2, 3, -4, 5]);
 
 Use the some Method to Check that Any Elements in an Array Meet a Criteria
-
+Notes: The some method works with arrays to check if any element passes a particular test. It returns a Boolean 
+value - true if any of the values meet the criteria, false if not.
 
 
 
