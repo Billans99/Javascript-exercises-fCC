@@ -2210,6 +2210,7 @@ value - true if all values meet the criteria, false if not.
 
     checkPositive([1, 2, 3, -4, 5]);
 
+Use the some Method to Check that Any Elements in an Array Meet a Criteria
 
 
 
