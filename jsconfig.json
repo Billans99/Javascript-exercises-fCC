@@ -2289,9 +2289,22 @@ next argument, and so on.
 
 Sum All Numbers in a Range
 Notes: Return the sum of two numbers in a given array and sum of all numbers between too
+    function sumAll(arr) {
+    // find out which is smaller and which is bigger
+    let lowerNum = Math.min(...arr);
+    let higherNum = Math.max(...arr);
+    // count numbers between && add starting 2 nums
+    let middleNums = 0;
+    for (let i = lowerNum; i <= higherNum; i++) {
+    middleNums += i;
+    console.log(middleNums);
+    }
+    return middleNums;
+    }
 
+    sumAll([1, 4]);
 
-
+Diff Two Arrays
 
 
 
