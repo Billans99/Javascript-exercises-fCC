@@ -2321,7 +2321,15 @@ Seek and Destroy
 
     destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 
+Wherefore art thou
+    function whatIsInAName(collection, source) {
+    const sourceKeys = Object.keys(source);
 
+    return collection
+        .filter(obj => sourceKeys
+        .every(key => obj[key] === source[key]));
+    }
+  
 
 
 
