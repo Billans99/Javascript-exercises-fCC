@@ -2305,7 +2305,14 @@ Notes: Return the sum of two numbers in a given array and sum of all numbers bet
     sumAll([1, 4]);
 
 Diff Two Arrays
+    function diffArray(arr1, arr2) {
+    const diff1 = arr1.filter(element => !arr2.includes(element));
+    const diff2 = arr2.filter(element => !arr1.includes(element));
+    let newArr = [...diff1, ...diff2];
+    return newArr;
+    }
 
+    diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 
 
