@@ -2344,9 +2344,21 @@ Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-da
     
     spinalCase("thisIsSpinalTap");
 
+Pig Latin
+Pig Latin is a way of altering English Words. The rules are as follows:
+- If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, 
+and add ay to it.
+- If a word begins with a vowel, just add way at the end.
+    function translatePigLatin(str) {
+    if (str.match(/^[aeiou]/)) return str + "way";
 
+    const consonantCluster = str.match(/^[^aeiou]+/)[0];
+    return str.substring(consonantCluster.length) + consonantCluster + 'ay';
+    }
 
+    translatePigLatin("consonant");
 
+Search and Replace
 
 
 
