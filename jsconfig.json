@@ -2362,7 +2362,17 @@ Search and Replace
 Notes: perform search and replace of a word turning it into another.
 Note: Preserve the case of the first character in the original word when you are replacing it. For example if you mean 
 to replace the word Book with the word dog, it should be replaced as Dog
+// replace word in string and from 2nd arg into word of 3rd arg
+function myReplace(str, before, after) {
+  // Check where in the index is the before arg, storing that value to a variable
+const indexOfBefore = str.indexOf(before);
+console.log(indexOfBefore);
 
+
+  return str;
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 
 
 
